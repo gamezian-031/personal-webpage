@@ -1,25 +1,205 @@
-body {
-    background-color: #314057;
+:root {
+    --timberwolf: #cfdbd5ff;
+    --alabaster: #e8eddfff;
+    --maize-crayola: #f5cb5cff;
+    --eerie-black: #242423ff;
+    --jet: #333533ff;
+
+    --facebook-blue: #3b5998;
+    --twitter-blue: #1DA1F2;
+    --deviantart-green: #05cc46;
+    --youtube-red: #FF0000;
+    --instagram-grad:#ffc273;
 }
 
-hr {
-    width: 100%;
+@font-face {
+    font-family: Montserrat;
+    src: url('assets/Montserrat-Regular.ttf');
 }
 
-
-#profile-image {
-    height: 240px;
-    width:  240px;
-    overflow: hidden;
-    border-radius: 50%;
-    border: 4px solid #3376b0;
+@font-face {
+    font-family: Ropa Sans;
+    src: url('assets/RopaSans-Regular.ttf');
 }
 
-#frame {
-    width: 90%;
-    background-color: antiquewhite;
-    margin: auto;
-    padding: 10px;
-    border: 2px whitesmoke;
-    border-radius: 20px;
+@font-face {
+    font-family: Ropa Sans;
+    font-style: italic;
+    src: url('assets/RopaSans-Italic.ttf');
+}
+
+html, body {
+    background-color: var(--eerie-black);
+    margin: 0px;
+    padding: 0px;
+}
+
+h2 {
+    font-family: 'Ropa Sans';
+    font-size: 30pt;
+    text-transform: uppercase;
+    color: var(--maize-crayola);
+    margin: 0px;
+    padding: 5px;
+    text-align: center;
+}
+
+.headline {
+    margin-top: 20px;
+    align-content: flex-start;
+}
+
+.quoteline {
+    margin-bottom: 20px;
+    text-transform: none;
+    font-style: italic;
+    font-size: 24pt;
+    align-content: flex-end;
+}
+
+h6 {
+    font-family: 'Montserrat';
+    font-size: 24pt;
+    text-transform: uppercase;
+    color: var(--alabaster);
+    margin: 0px;
+    margin-right: 20px;
+    padding-left: 20px;
+    align-self: center;
+    flex-grow: 1;
+
+}
+
+h6.darken {
+    color: var(--eerie-black);
+    justify-self: flex-end;
+    text-align: end;
+    flex-grow: 0;
+}
+
+.main-frame {
+    height: 90vh;
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    /* border-bottom: 2px solid var(--timberwolf); */
+}
+
+.main-frame > .image-frame {
+    height: inherit;
+    width: auto;
+    margin: 0px;
+    padding: 0px;
+    margin: 0px;
+    align-content: flex-start;
+    flex-shrink: 0;
+}
+
+.image-frame > img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.main-frame > .content-frame {
+    height: inherit;
+    width: auto;
+    margin: 0px;
+    padding: auto;
+    align-content: stretch;
+    flex-basis: 50%;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    border-left: 2px solid var(--timberwolf);
+}
+
+.content-frame > .text-block {
+    height: max-content;
+    width: calc(inherit - 50%);
+    padding: 5px 20px 5px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.text-block > svg {
+    height: inherit;
+    width: auto;
+    max-width: 10%;
+    padding-right: 15px;
+    fill: var(--maize-crayola);
+    border-right: 1px solid var(--maize-crayola);
+}
+
+.text-block > p {
+    width: inherit;
+    color: var(--alabaster);
+    margin-left: 20px;
+    font-family: Montserrat;
+    font-size: 14pt;
+    flex-grow: 1;
+    text-align: justify;
+    word-wrap: normal;
+    word-break: normal;
+}
+
+.text-block > p > b {
+    text-emphasis-color: var(--maize-crayola);
+    text-decoration-color: var(--maize-crayola);
+    color: var(--maize-crayola);
+}
+
+.footer {
+    height: calc(10vh - 2px);
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--jet);
+    border-top: 2px solid var(--timberwolf);
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+}
+
+.footer > a {
+    margin: 0px 10px 0px 0px;
+    padding: 0px;
+    height: 50px;
+    width: auto;
+    flex-grow: 1;
+}
+
+.footer > a > svg {
+    margin: 0px;
+    padding: 0px;
+    height: 45px;
+    width: auto;
+}
+
+#facebook {
+    fill: var(--facebook-blue);
+}
+
+#twitter {
+    fill: var(--twitter-blue);
+}
+
+#youtube {
+    fill: var(--youtube-red);
+}
+
+#instagram {
+    fill: var(--instagram-grad);
+}
+
+#deviantart {
+    fill: var(--deviantart-green);
 }
