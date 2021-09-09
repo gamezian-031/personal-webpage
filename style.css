@@ -18,17 +18,17 @@
 
 @font-face {
     font-family: Montserrat;
-    src: url('../NCP3106/assets/Montserrat-Regular.ttf') format('truetype');
+    src: url('../assets/Montserrat-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: Ropa Sans;
-    src: url('../NCP3106/assets/RopaSans-Regular.ttf') format('truetype');
+    src: url('../assets/RopaSans-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: Fira;
-    src: url('../NCP3106/assets/FiraMono-Medium.ttf') format('truetype');
+    src: url('../assets/FiraMono-Medium.ttf') format('truetype');
 }
 
 @-moz-document url-prefix() {
