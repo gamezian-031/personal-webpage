@@ -18,17 +18,17 @@
 
 @font-face {
     font-family: Montserrat;
-    src: url('/assets/Montserrat-Regular.ttf');
+    src: url('../SoftDes/assets/Montserrat-Regular.ttf');
 }
 
 @font-face {
     font-family: Ropa Sans;
-    src: url('/assets/RopaSans-Regular.ttf');
+    src: url('../SoftDes/assets/RopaSans-Regular.ttf');
 }
 
 @font-face {
     font-family: Fira;
-    src: url('/assets/FiraMono-Medium.ttf');
+    src: url('../SoftDes/assets/FiraMono-Medium.ttf');
 }
 
 @-moz-document url-prefix() {
