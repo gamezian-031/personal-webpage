@@ -3,7 +3,7 @@ a{
 }
 
 .bg-image{
-    background-image: url('../assets/backdrop.jpg');
+    background-image: url('../NCP3106/assets/backdrop.jpg');
     background-size: cover;
     height: 100vh;
 }
