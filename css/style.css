@@ -5,5 +5,9 @@ a{
 .bg-image{
     background-image: url('../backdrop.jpg');
     background-size: cover;
+    font-size: 1.25rem;
+}
+
+.feature-box{
     height: 100vh;
 }
