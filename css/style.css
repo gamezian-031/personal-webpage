@@ -1,3 +1,9 @@
-body {
+a{
+    text-decoration: none;
+}
 
+.bg-image{
+    background-image: url('/assets/backdrop.jpg');
+    background-size: cover;
+    height: 100vh;
 }
