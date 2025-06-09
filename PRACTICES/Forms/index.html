@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Personal Webpage</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+        <script src="js/bootstrap.min.js"></script>
+
+    </head>
+
+    <body>
+        <div class="background">
+            <div class="container h-auto w-25 bg-dark opacity-100 p-4 rounded-3 text-white">
+                <h1>Registration</h1>
+                <form action="/signup" method="POST">
+                    <div class="d-flex flex-row">
+                        <p>
+                            <label>First name</label>
+                            <input type="text" value="first_name">
+                          </p>
+                          <p>
+                            <label>Last name</label>
+                            <input type="text" value="last_name">
+                          </p>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <p>
+                            <label>Email</label>
+                            <input type="email" value="email">
+                          </p>
+                          <p>
+                            <label>Phone number</label>
+                            <input type="tel" value="phone">
+                          </p>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <p>
+                            <label>Password</label>
+                            <input type="password" value="password">
+                          </p>
+                          <p>
+                            <label>Confirm your password</label>
+                            <input type="password" value="password_confirm">
+                          </p>
+                    </div>
+                    <p>
+                        <label>Gender</label>
+                        <select>
+                          <option>Gender</option>
+                          <option>Male</option>
+                          <option>Female</option>
+                          <option>LGBTQIA+</option>
+                        </select>
+                      </p>
+                    <p>
+                      <label>Country</label>
+                      <select>
+                        <option>Country</option>
+                        <option>Philippines</option>
+                        <option>Canada</option>
+                        <option>France</option>
+                        <option>Germany</option>
+                        <option>Italy</option>
+                        <option>Japan</option>
+                        <option>Russia</option>
+                        <option>United Kingdom</option>
+                        <option>United States</option>
+                      </select>
+                    </p>
+                    <p>
+                      <label>
+                        <input type="checkbox" value="terms">
+                        I agree to the <a href="/terms">terms and conditions</a>
+                      </label>
+                    </p>
+                    <p class="text-center">
+                      <button class="p-3 bg-secondary text-white rounded-3">
+                        Sign up
+                      </button>
+                    </p>
+                  </form>
+            </div>
+        </div>
+
+        
+
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,55 @@
+:root{
+}
+
+@-moz-document url-prefix() {
+    html{overflow: hidden !important;}
+    body{overflow-y: scroll;}
+}
+
+html, body{
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+h2{
+    font-size: 3.5rem;
+}
+
+h5{
+    font-size: 2rem;
+}
+
+.bg-image{
+    background-image: url('../backdrop.jpg');
+    background-size: cover;
+    font-size: 1.25rem;
+}
+
+.feature-box{
+    height: 100vh;
+}
+
+@media only screen and (max-width: 600px) {
+    .text{
+        width: auto;
+        border-radius: 5px;
+        background-color: var(--bs-white);
+    }
+
+    h2{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    h5{
+        text-align: center;
+        font-size: 0.75rem;
+    }
+  }
